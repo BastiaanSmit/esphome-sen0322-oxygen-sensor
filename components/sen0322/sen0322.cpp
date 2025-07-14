@@ -22,7 +22,8 @@ void SEN0322Sensor::setup() {
     return;
   }
   
-  delay(100);
+  //delay(100);
+  delay_microseconds_safe(100);
   ESP_LOGCONFIG(TAG, "SEN0322 setup complete");
 }
 
@@ -48,7 +49,8 @@ void SEN0322Sensor::update() {
   }
   
   // Wait for sensor to process
-  delay(50);
+  //delay(50);
+  delay_microseconds_safe(50);
   
   // Read 3 bytes of data
   uint8_t data[3];
