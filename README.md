@@ -29,7 +29,7 @@ Add this to your ESPHome YAML configuration:
 
 ```yaml
 external_components:
-  - source: github://makbart1980/esphome-sen0322-oxygen-sensor
+  - source: github://BastiaanSmit/esphome-sen0322-oxygen-sensor
     components: [ sen0322 ]
 
 i2c:
@@ -66,7 +66,7 @@ ota:
 logger:
 
 external_components:
-  - source: github://YOUR_GITHUB_USERNAME/esphome-sen0322-oxygen-sensor
+  - source: github://BastiaanSmit/esphome-sen0322-oxygen-sensor
     components: [ sen0322 ]
 
 i2c:
